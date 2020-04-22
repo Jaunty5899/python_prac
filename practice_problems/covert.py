@@ -114,4 +114,4 @@ def diamond1(num):
 
             print(rv.center(num))
 
-diamond(5)
+diamond1(5)
