@@ -100,7 +100,7 @@ def histogram1(listOfNumber):
 #                     buy =  or i > midi + 1
 # 
 
-def diamond(num):
+def diamond1(num):
     if(num % 2 == 0): num += 1  # 4 -> 5
     double = num * 2            # 10
     for i in range(1,double):   # 1 - 10
