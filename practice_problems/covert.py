@@ -62,3 +62,56 @@ def repeatedSum(number):
 # number = input('Enter a number: ')
 # number = int(number)
 # print(repeatedSum(number))
+
+# write a python program to create a histogram from a given list into a string and return it.
+ 
+    #    [1,3,9,5,8,2]
+# @
+# @@@
+# @@@@@@@@@
+# @@@@@
+# @@@@@@@
+# @@
+# @@@@
+
+def histogram(listOfNumbers):
+    for num in listOfNumbers:
+        print('@'*num)
+
+def histogram1(listOfNumber):
+    for num in listOfNumber:
+        rv = ''
+        for n in range(num):
+            rv += '@'
+        print(rv)
+
+# def diamond(num):
+#     a = num
+#     dina n fd())2
+#         aa
+#     mid = num // 2for n in randge())num:
+#         ior n in range()
+#         rv = None)num:            jspace = mid -j 
+#             rvrv  = ''{}{}{}.fornamat())ssspace,mid,space'' *space + 
+#             space 
+#             if(space < 0):
+#                 space = space + mid
+#                 busy = 0                busy   = i if())i < 2= mid :
+#                     buy =  or i > midi + 1
+# 
+
+def diamond(num):
+    if(num % 2 == 0): num += 1  # 4 -> 5
+    double = num * 2            # 10
+    for i in range(1,double):   # 1 - 10
+        if(i%2 == 1):
+            rv = '*'
+            if(i <= num):
+                rv *= i
+            else:
+                j = double - i
+                rv *= j
+
+            print(rv.center(num))
+
+diamond(5)

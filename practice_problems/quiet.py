@@ -58,3 +58,36 @@
 # sum = int(a) + int(a*2) + int(a*3)
 # print('sum =',a,'+',a*2,'+',a*3,'=',sum)
 
+# write a python program to create a histogram from a given list into a string and return it.
+ 
+    #    [1,3,9,5,8,2]
+# @
+# @@@
+# @@@@@@@@@
+# @@@@@
+# @@@@@@@
+# @@
+# @@@@
+
+b = [3,8,1,5,10,7,2]
+
+for i in b:
+    a=''
+    # print(a*i)
+    for j in range(i):
+        a+='*'
+    print(a)  
+    # print('\n')
+
+def diamond(b):
+    c = b.copy()
+    c.sort()
+    for i in b:
+        a=''
+        # print(a*i)
+        for j in range(i):
+            a+='*'
+        print(a.center(c[-1]))
+        # # c-=1
+
+diamond([1,3,5,7,9,11,13,15,13,11,9,7,5,3,1])
