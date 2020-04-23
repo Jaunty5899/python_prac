@@ -13,7 +13,6 @@ def fizzBuzz(num):
         
     if(result == ''):
         result = num
-    
     return result
 
 # a = input("Input a Number: ")
@@ -100,7 +99,7 @@ def histogram1(listOfNumber):
 #                     buy =  or i > midi + 1
 # 
 
-def diamond1(num):
+def diamond(num):
     if(num % 2 == 0): num += 1  # 4 -> 5
     double = num * 2            # 10
     for i in range(1,double):   # 1 - 10
@@ -114,4 +113,35 @@ def diamond1(num):
 
             print(rv.center(num))
 
-diamond1(5)
+def diamond1(num):
+    from math import ceil
+    if(num % 2 == 0): num += 1  # 4 -> 5
+    double = num * 2  
+    mid = ceil(num/2) 
+    num1 = num + 1
+    for i in range(1,num1):
+        blankCount = mid - i
+        if(blankCount < 0): blankCount = i - mid
+        oddDiff = i - 1
+        starCount = i + oddDiff
+        if(starCount > num): starCount = i - oddDiff
+        rv = ''
+        for j in range(blankCount):
+            rv += ' '
+        for k in range(starCount):
+            rv += '*'
+        print(rv)
+
+def fizzbuzz():
+    for num in range(100):
+        result = ''
+        if(num % 3 == 0):
+            result += 'Fizz'
+            
+        if(num % 5 == 0):
+            result += 'Buzz'
+            
+        if(result == ''):
+            result = num
+
+        print(result)
