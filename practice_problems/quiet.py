@@ -105,3 +105,13 @@ def fizzbuzz():
 
 fizzbuzz()      
 
+# fibonacci -> 0 1 1 2 3 5 8 13 21 
+
+def fibon(input):
+    a=[0,1]
+    if input!=2:
+        for i in range(input-2):
+            a.append(a[i]+a[i+1])    
+    print(a)
+
+fibon(3)

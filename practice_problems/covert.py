@@ -130,3 +130,16 @@ def fizzbuzz():
             result = num
 
         print(result)
+
+# fibonacci -> 0 1 1 2 3 5 8 13 21 
+def fibonacci(num):
+    prev = 0
+    next = 1
+    print(prev)
+    print(next)
+    for i in range(num - 2):
+        rv = prev + next
+        print(rv)
+        prev = next
+        next = rv
+        
