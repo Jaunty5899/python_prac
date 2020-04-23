@@ -84,20 +84,6 @@ def histogram1(listOfNumber):
             rv += '@'
         print(rv)
 
-# def diamond(num):
-#     a = num
-#     dina n fd())2
-#         aa
-#     mid = num // 2for n in randge())num:
-#         ior n in range()
-#         rv = None)num:            jspace = mid -j 
-#             rvrv  = ''{}{}{}.fornamat())ssspace,mid,space'' *space + 
-#             space 
-#             if(space < 0):
-#                 space = space + mid
-#                 busy = 0                busy   = i if())i < 2= mid :
-#                     buy =  or i > midi + 1
-# 
 
 def diamond(num):
     if(num % 2 == 0): num += 1  # 4 -> 5
@@ -115,8 +101,7 @@ def diamond(num):
 
 def diamond1(num):
     from math import ceil
-    if(num % 2 == 0): num += 1  # 4 -> 5
-    double = num * 2  
+    if(num % 2 == 0): num += 1   
     mid = ceil(num/2) 
     num1 = num + 1
     for i in range(1,num1):
