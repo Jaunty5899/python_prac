@@ -115,3 +115,14 @@ def fibon(input):
     print(a)
 
 fibon(3)
+
+# 4! -> 1.2.3.4 = 24
+
+def fact(input):
+    a=input
+    input-=1
+    if a==1:
+        return 1
+    else:    
+        return a*fact(input)
+print(fact(4))    
