@@ -126,3 +126,48 @@ def fact(input):
     else:    
         return a*fact(input)
 print(fact(4))    
+# a, b = [int(i) for i in input().split()]
+
+def srh():
+    s = input('Enter alphanumeric name: ')
+    b = ''
+    a = ['0','1','2','3','4','5','6','7','8','9']
+    for i in s:
+        isNumber = i in a       # input = 'J2aun7ty'
+        if not isNumber:
+                b+=i               # if(truthyValue)
+                                # if(not isNumber)
+                      
+                                    #if(isNumber == True)  is same as if(isNumber)
+                                    # i = 'J'
+                                    # flag = 0, flag =1,2
+                                    #if(not flag):  code here runs when flag is 0
+
+            
+        
+    print(b)   
+
+srh()
+
+
+def srh1():
+        s = input('Enter alphanumeric name: ')
+        b = ''
+        a = ['0','1','2','3','4','5','6','7','8','9']
+        for i in s:
+            # input = 'J2aun7ty'
+            # i = '2'
+            isChar = 1
+            for j in a:
+                # j = '0'
+                if i == j: # 'J' == '0'   
+                    isChar = 0;
+                    break;  
+  
+            if isChar:
+                b+=i
+            
+                        
+                    # b = 'JJJJJJJJ'
+        print(b)   
+srh1()
