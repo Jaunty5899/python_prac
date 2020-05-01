@@ -103,7 +103,7 @@ def fizzbuzz():
         else:
             print(i)    
 
-fizzbuzz()      
+# fizzbuzz()      
 
 # fibonacci -> 0 1 1 2 3 5 8 13 21 
 
@@ -114,7 +114,7 @@ def fibon(input):
             a.append(a[i]+a[i+1])    
     print(a)
 
-fibon(3)
+# fibon(3)
 
 # 4! -> 1.2.3.4 = 24
 
@@ -125,7 +125,7 @@ def fact(input):
         return 1
     else:    
         return a*fact(input)
-print(fact(4))    
+# print(fact(4))    
 # a, b = [int(i) for i in input().split()]
 
 def srh():
@@ -147,7 +147,7 @@ def srh():
         
     print(b)   
 
-srh()
+# srh()
 
 
 def srh1():
@@ -165,9 +165,48 @@ def srh1():
                     break;  
   
             if isChar:
-                b+=i
-            
-                        
+                b+=i          
                     # b = 'JJJJJJJJ'
         print(b)   
-srh1()
+# srh1()
+
+
+#c = "("+s[0:3]+")"+' '+s[3:6]+"-"+s[6:10]
+
+# a = input()
+# b,c = '*',len(a)+4
+# print(b*c)
+# print(b+' '+a+' '+b)
+# print(b*c)
+
+def target(l,t):
+    length = len(l)
+    for i in range(length):
+        if i!=length-1:
+            for j in range(length):
+                if j!=length-1:                
+                    j+=1
+                    if l[i]+l[j]==t:
+                        print(l[i],'and',l[j])
+                        # return; 
+                        
+# target([8,3,7,11,15,4,1,80,-71],9)
+
+def palind(inpt):
+    x = [i.lower() for i in inpt if i.isalnum()]
+    mid = len(x)//2
+    j = -1
+    for i in range(mid):
+        print(x[i],x[j])
+        if x[i]==x[j]:
+            j-=1
+        else:
+            return False;
+    return True;            
+
+print(palind("laal"))
+
+
+https://www.w3schools.com/python/python_ref_functions.asp
+https://www.geeksforgeeks.org/platform-module-in-python/
+https://www.tutorialsteacher.com/python/magic-methods-in-python

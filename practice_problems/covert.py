@@ -150,3 +150,36 @@ def factorial(num):
         return 1
     else:
         return num * factorial(num - 1)
+
+# return indices of two numbers that adds up to the given target
+# target = 9 numbers = [1,2,3,4,5], output = 3,4
+def twoSum():
+    inputs = (input('Enter comma separated numbers: ')).split(',') #[1,2,3,4,5]
+    numbers = [int(x) for x in inputs]
+    target = int(input('Enter target number: '))
+    print('numbers are ', numbers)
+    print('target is ', target)
+    for number in numbers:
+        for n in numbers:
+            if n != number:
+                sum = number + n
+                if(sum == target):
+                    print(number, n)
+                    return
+
+def checkPalindrome():
+    inputs = input("Enter a phrase: ")
+    phraseList = [x.lower() for x in inputs if x.isalnum()]
+    copy = phraseList.copy()
+    copy.reverse()
+    phraseListReverse = copy.copy()
+    print('list',phraseList)
+    print('reverse', phraseListReverse)
+    length = len(phraseList)
+    for i in range(length):
+        # print(phraseList[i], phraseListReverse[i])
+        if(phraseList[i] != phraseListReverse[i]):
+            print('False')
+            return
+
+    print('True')
